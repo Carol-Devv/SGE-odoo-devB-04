@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 {
-    'name': "sge_libreria",
+    'name': "cms_restaurante",
 
     'summary': "Short (1 phrase/line) summary of the module's purpose",
 
@@ -22,11 +22,9 @@ Long description of module's purpose
 
     # always loaded
     'data': [
-        'security/ir.model.access.csv',
-        'views/categoria.xml',
-        'views/menus.xml',
-        ### define module data en odoo.com
-        ### datos maestros que existen pero no se realizan operaciones sobre ellos
+        # 'security/ir.model.access.csv',
+        'views/views.xml',
+        'views/templates.xml',
     ],
     # only loaded in demonstration mode
     'demo': [
