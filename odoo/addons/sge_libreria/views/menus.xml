@@ -8,6 +8,18 @@
             <field name="view_mode">tree,form</field>
         </record>
 
+        <record id="sge_libreria.libro_action" model="ir.actions.act_window">
+            <field name="name">Libros</field>
+            <field name="res_model">sge_libreria.libro</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <record id="sge_libreria.autor_action" model="ir.actions.act_window">
+            <field name="name">Autores</field>
+            <field name="res_model">sge_libreria.autor</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
         <!-- Menús -->
         <menuitem
             id="sge_libreria.root_menu" 
@@ -19,9 +31,21 @@
             name="Categoría"
             action="sge_libreria.categoria_action" 
             parent="sge_libreria.root_menu"
-            sequence="10"/>
+            sequence="1"/>
+
+        <menuitem
+            id="sge_libreria.libro_menu"
+            name="Libro"
+            action="sge_libreria.libro_action" 
+            parent="sge_libreria.root_menu"
+            sequence="2"/>
         
-        
+        <menuitem
+            id="sge_libreria.autor_menu"
+            name="Autor"
+            action="sge_libreria.autor_action" 
+            parent="sge_libreria.root_menu"
+            sequence="3"/>
         
     
     </data>

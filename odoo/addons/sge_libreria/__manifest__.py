@@ -24,6 +24,8 @@ Long description of module's purpose
     'data': [
         'security/ir.model.access.csv',
         'views/categoria.xml',
+        'views/libro.xml',
+        'views/autor.xml',
         'views/menus.xml',
         ### define module data en odoo.com
         ### datos maestros que existen pero no se realizan operaciones sobre ellos
@@ -32,5 +34,7 @@ Long description of module's purpose
     'demo': [
         'demo/demo.xml',
     ],
+    
+    # "installable": True,
 }
 

@@ -9,12 +9,18 @@
               <group>
                 <field name="name"></field>
                 <field name="description"></field>
+                <field name="libro_ids"></field>
+                  <tree string="Libro">
+                    <field name="name"></field>
+                    <field name="precio"></field>
+                    <field name="currency_id"></field>
+                  </tree>
+                </field>
               </group>
             </sheet>
           </form>
         </field>
-      </record>
-
+    </record>
     <record id="sge_libreria.categoria_tree" model="ir.ui.view">
       <field name="name">sge_libreria.categoria.tree</field>
       <field name="model">sge_libreria.categoria</field>
@@ -22,9 +28,10 @@
         <tree string="Categoría">
           <field name="name"></field>
           <field name="description"></field>
+          <!--No es mandatory, se puede quitar porque decir el nº de registros quizás no aporta nada-->
+          <field name="libro_ids"></field>
         </tree>
       </field>
     </record>
-
   </data>
 </odoo>
