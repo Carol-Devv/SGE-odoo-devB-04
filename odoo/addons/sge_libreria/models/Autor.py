@@ -9,3 +9,5 @@ class Autor(models.Model):
     name = fields.Char('Nombre')
     fecha_nac = fields.Date('Fecha de nacimiento')
     country_id = fields.Many2one('res.country', string="País de origen")
+    
+    ###libro_ids = fields.Many2many('sge_libreria.libro', string='Libros', relation='sge_libreria_libro_autor_rel')

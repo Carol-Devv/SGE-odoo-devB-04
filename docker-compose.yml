@@ -27,6 +27,7 @@ services:
       - "8069:8069"
     tty: true
     command: -- --dev=reload #editar para que odoo actualice el módulo al lanzar el contenedor
+    # odoo --update=sge_libreria --load=web --dev=reload
     # command: odoo scaffold module_technical_name /mnt/extra-addons
     volumes:
       - ./odoo/addons:/mnt/extra-addons

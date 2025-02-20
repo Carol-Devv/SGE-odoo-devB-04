@@ -10,6 +10,11 @@
                 <field name="name"></field>
                 <field name="fecha_nac"></field>
                 <field name="country_id"></field>
+                <!--<field name="libro_ids"></field>
+                  <tree string="Libro">
+                    <field name="name"></field>
+                    <field name="precio"></field>
+                    <field name="currency_id"></field>-->
               </group>
             </sheet>
           </form>

@@ -1,2 +1,5 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
-access_cms_restaurante_cms_restaurante,cms_restaurante.cms_restaurante,model_cms_restaurante_cms_restaurante,base.group_user,1,1,1,1
+access_cms_restaurante_alimento_users,cms_restaurante.alimento_users,model_cms_restaurante_alimento,base.group_user,1,1,1,0
+access_cms_restaurante_plato_users,cms_restaurante.plato_users,model_cms_restaurante_plato,base.group_user,1,1,1,0
+access_cms_restaurante_cliente_users,cms_restaurante.cliente_users,model_cms_restaurante_cliente,base.group_user,1,1,1,0
+access_cms_restaurante_proveedor_users,cms_restaurante.proveedor_users,model_cms_restaurante_proveedor,base.group_user,1,1,1,0

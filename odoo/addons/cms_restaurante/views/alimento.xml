@@ -1,0 +1,31 @@
+<odoo>
+  <data>
+    <record id="cms_restaurante.alimento_form" model="ir.ui.view">
+        <field name="name">cms_restaurante.alimento.form</field>
+        <field name="model">cms_restaurante.alimento</field>
+        <field name="arch" type="xml">
+          <form string="">
+            <sheet>
+              <group>
+                <field name="name"></field>
+                <field name="quantity"></field>
+                <field name="category"></field>
+              </group>
+            </sheet>
+          </form>
+        </field>
+      </record>
+
+    <record id="cms_restaurante.alimento_tree" model="ir.ui.view">
+      <field name="name">cms_restaurante.alimento.tree</field>
+      <field name="model">cms_restaurante.alimento</field>
+      <field name="arch" type="xml">
+        <tree string="Alimento">
+          <field name="name"></field>
+          <field name="quantity"></field>
+          <field name="category"></field>
+        </tree>
+      </field>
+    </record>
+  </data>
+</odoo>

@@ -9,13 +9,13 @@
               <group>
                 <field name="name"></field>
                 <field name="description"></field>
-                <field name="libro_ids"></field>
+                <field name="libro_ids">
                   <tree string="Libro">
                     <field name="name"></field>
                     <field name="precio"></field>
                     <field name="currency_id"></field>
                   </tree>
-                </field>
+                </field>  
               </group>
             </sheet>
           </form>

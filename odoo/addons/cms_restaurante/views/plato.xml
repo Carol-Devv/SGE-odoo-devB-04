@@ -1,0 +1,29 @@
+<odoo>
+  <data>
+    <record id="cms_restaurante.plato_form" model="ir.ui.view">
+        <field name="name">cms_restaurante.plato.form</field>
+        <field name="model">cms_restaurante.plato</field>
+        <field name="arch" type="xml">
+          <form string="">
+            <sheet>
+              <group>
+                <field name="cookingTime"></field>
+                <field name="available"></field>
+              </group>
+            </sheet>
+          </form>
+        </field>
+      </record>
+
+    <record id="cms_restaurante.plato_tree" model="ir.ui.view">
+      <field name="name">cms_restaurante.plato.tree</field>
+      <field name="model">cms_restaurante.plato</field>
+      <field name="arch" type="xml">
+        <tree string="Plato">
+          <field name="cookingTime"></field>
+          <field name="available"></field>
+        </tree>
+      </field>
+    </record>
+  </data>
+</odoo>

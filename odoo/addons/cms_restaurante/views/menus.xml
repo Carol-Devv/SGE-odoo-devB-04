@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!-- Acciones -->
+        <record id="cms_restaurante.alimento_action" model="ir.actions.act_window">
+            <field name="name">Alimentos</field>
+            <field name="res_model">cms_restaurante.alimento</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <record id="cms_restaurante.plato_action" model="ir.actions.act_window">
+            <field name="name">Platos</field>
+            <field name="res_model">cms_restaurante.plato</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <record id="cms_restaurante.cliente_action" model="ir.actions.act_window">
+            <field name="name">Clientes</field>
+            <field name="res_model">cms_restaurante.cliente</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <record id="cms_restaurante.proveedor_action" model="ir.actions.act_window">
+            <field name="name">Proveedores</field>
+            <field name="res_model">cms_restaurante.proveedor</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <!-- Menús -->
+        <menuitem
+            id="cms_restaurante.root_menu" 
+            name="Restaurante"
+            sequence="1"/>
+
+        <menuitem
+            id="cms_restaurante.proveedor_menu"
+            name="Proveedores"
+            action="cms_restaurante.proveedor_action" 
+            parent="cms_restaurante.root_menu"
+            sequence="1"/>
+
+        <menuitem
+            id="cms_restaurante.cliente_menu"
+            name="Clientes"
+            action="cms_restaurante.cliente_action" 
+            parent="cms_restaurante.root_menu"
+            sequence="2"/>
+        
+        <menuitem
+            id="cms_restaurante.plato_menu"
+            name="Platos"
+            action="cms_restaurante.plato_action" 
+            parent="cms_restaurante.root_menu"
+            sequence="3"/>
+
+        <menuitem
+            id="cms_restaurante.alimento_menu"
+            name="Alimentos"
+            action="cms_restaurante.alimento_action" 
+            parent="cms_restaurante.root_menu"
+            sequence="3"/>
+        
+    
+    </data>
+</odoo>

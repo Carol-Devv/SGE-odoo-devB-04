@@ -24,7 +24,7 @@
         <menuitem
             id="sge_libreria.root_menu" 
             name="Librería"
-            sequence="1"/>
+            sequence="2"/>
 
         <menuitem
             id="sge_libreria.categoria_menu"

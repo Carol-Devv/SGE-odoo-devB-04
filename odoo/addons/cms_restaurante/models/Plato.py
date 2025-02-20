@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-form odoo import models, fields, api
+from odoo import models, fields, api
 
 class Plato(models.Model):
     _name = 'cms_restaurante.plato'
