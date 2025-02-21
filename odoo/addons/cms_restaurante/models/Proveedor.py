@@ -8,6 +8,8 @@ class Proveedor(models.Model):
     
     name = fields.Char('Nombre', required=True, help="Introduzca el nombre del proveedor.")
     # alimentos[] los alimentos que provee objetos de tipo alimento
-    dateStartAgreemetent = fields.Date('Fecha de inicio de contrato', help="Introduzca la fecha de inicio del contrato.")
+    
+    dateStartAgreemetent = fields.Date('Fecha de inicio de contrato', required=True, help="Introduzca la fecha de inicio del contrato.") 
+    #campo único porque se repetirá el proveedor para añadir cantidad de producto
     
 

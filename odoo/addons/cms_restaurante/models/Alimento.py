@@ -7,7 +7,7 @@ class Alimento(models.Model):
     _description = 'Alimento'          #lo ve el usuario usuario
     
     name = fields.Char('Nombre', required=True, help="Introduzca el alimento.")
-    quantity = fields.Integer('Cantidad', help="Introduzca la cantidad.")
+    quantity = fields.Integer('Cantidad', help="Introduzca la cantidad.") #calculado según pidan platos y se añadan proveedores
     category = fields.Selection([
         ('V', 'Vegetal'),
         ('F', 'Fruta'),
@@ -19,3 +19,7 @@ class Alimento(models.Model):
         ('FS', 'Frutos secos')
         
     ], string='Categoría')
+    
+    # nombre proveedor --> relación    proveedor 1 : N alimento
+    # nombre platos en los que está --> relación   plato N : M alimento
+    

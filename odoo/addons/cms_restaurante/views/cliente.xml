@@ -8,6 +8,7 @@
             <sheet>
               <group>
                 <field name="name"></field>
+                <field name="costOrder"></field>
                 <field name="dateOrder"></field>
               </group>
             </sheet>
@@ -21,6 +22,7 @@
       <field name="arch" type="xml">
         <tree string="Cliente">
           <field name="name"></field>
+          <field name="costOrder"></field>
           <field name="dateOrder"></field>
         </tree>
       </field>
