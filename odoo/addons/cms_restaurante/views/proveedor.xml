@@ -8,7 +8,12 @@
             <sheet>
               <group>
                 <field name="name"></field>
-                <!--array alimentos[]-->
+                <field name="alimento_ids">
+                  <tree string="Alimentos">
+                    <field name="name"></field>
+                    <field name="quantity"></field>
+                  </tree>
+                </field>
                 <field name="dateStartAgreemetent"></field>
               </group>
             </sheet>
@@ -22,6 +27,13 @@
       <field name="arch" type="xml">
         <tree string="Proveedor">
           <field name="name"></field>
+          <field name="alimento_ids">
+            <tree string="Alimentos">
+              <field name="name"></field>
+              <field name="quantity"></field>
+            </tree>
+          </field>
+          <field name="dateStartAgreemetent"></field>
         </tree>
       </field>
     </record>

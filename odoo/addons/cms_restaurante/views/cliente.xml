@@ -4,10 +4,15 @@
         <field name="name">cms_restaurante.cliente.form</field>
         <field name="model">cms_restaurante.cliente</field>
         <field name="arch" type="xml">
-          <form string="">
+          <form string="Cliente">
             <sheet>
               <group>
                 <field name="name"></field>
+                <field name="dish_ids">
+                  <tree string="Platos">
+                    <field name="name"></field>
+                  </tree>
+                </field>
                 <field name="costOrder"></field>
                 <field name="dateOrder"></field>
               </group>
@@ -22,6 +27,11 @@
       <field name="arch" type="xml">
         <tree string="Cliente">
           <field name="name"></field>
+          <field name="dish_ids">
+            <tree string="Platos">
+              <field name="name"></field>
+            </tree>
+          </field>
           <field name="costOrder"></field>
           <field name="dateOrder"></field>
         </tree>

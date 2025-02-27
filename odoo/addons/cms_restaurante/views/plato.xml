@@ -7,8 +7,22 @@
           <form string="">
             <sheet>
               <group>
+                <field name="name"></field>
+                <field name="cost"></field>
                 <field name="cookingTime"></field>
                 <field name="available"></field>
+                <field name="alimento_ids">
+                  <tree string="Alimentos">
+                    <field name="name"></field>
+                    <field name="quantity"></field>
+                  </tree>
+                </field>
+                <field name="cliente_ids">
+                  <tree string="Registro de clientes">
+                    <field name="name"></field>
+                    <field name="dateOrder"></field>
+                  </tree>
+                </field>
               </group>
             </sheet>
           </form>
@@ -20,8 +34,21 @@
       <field name="model">cms_restaurante.plato</field>
       <field name="arch" type="xml">
         <tree string="Plato">
+          <field name="name"></field>
           <field name="cookingTime"></field>
           <field name="available"></field>
+          <field name="alimento_ids">
+            <tree string="Alimentos">
+              <field name="name"></field>
+              <field name="quantity"></field>
+            </tree>
+          </field>
+          <field name="cliente_ids">
+            <tree string="Registro de clientes">
+              <field name="name"></field>
+              <field name="dateOrder"></field>
+            </tree>
+          </field>
         </tree>
       </field>
     </record>

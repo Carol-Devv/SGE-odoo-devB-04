@@ -10,6 +10,12 @@
                 <field name="name"></field>
                 <field name="quantity"></field>
                 <field name="category"></field>
+                <field name="proveedor_id"></field>
+                <field name="plato_ids">
+                  <tree string="Platos que lo contienen">
+                    <field name="name"></field>
+                  </tree>
+                </field>
               </group>
             </sheet>
           </form>
@@ -24,6 +30,12 @@
           <field name="name"></field>
           <field name="quantity"></field>
           <field name="category"></field>
+          <field name="proveedor_id"></field>
+          <field name="plato_ids">
+            <tree string="Platos que lo contienen">
+              <field name="name"></field>
+            </tree>
+          </field>          
         </tree>
       </field>
     </record>
