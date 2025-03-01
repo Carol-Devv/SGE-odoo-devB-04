@@ -11,10 +11,9 @@
                 <field name="cost"></field>
                 <field name="cookingTime"></field>
                 <field name="available"></field>
-                <field name="plato_alimento_ids">
+                <field name="alimento_ids">
                   <tree string="Alimentos">
-                    <field name="alimento_id"></field>
-                    <field name="quantity_ingredient"></field>
+                    <field name="name"></field>
                   </tree>
                 </field>
                 <field name="cliente_ids">
@@ -37,10 +36,9 @@
           <field name="name"></field>
           <field name="cookingTime"></field>
           <field name="available"></field>
-          <field name="plato_alimento_ids">
+          <field name="alimento_ids">
             <tree string="Alimentos">
-              <field name="alimento_id"></field>
-              <field name="quantity_ingredient"></field>
+              <field name="name"></field>
             </tree>
           </field>
           <field name="cliente_ids">
