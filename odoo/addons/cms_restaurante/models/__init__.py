@@ -4,3 +4,4 @@ from . import Alimento
 from . import Plato
 from . import Cliente
 from . import Proveedor
+from . import PlatoAlimento

@@ -18,5 +18,8 @@ class Plato(models.Model):
     # nombre y cantidad alimentos -- > alimento --> relación      plato N : M alimento
     cliente_ids = fields.Many2many('cms_restaurante.cliente', string='Clientes', relation='cms_restaurante_cliente_plato_rel') #registro de clientes
     
-    
-    alimento_ids = fields.Many2many('cms_restaurante.alimento', string='Alimentos', relation='cms_restaurante_alimento_plato_rel') #alimentos del plato
+    #no sé si esto me hace falta ya
+    alimento_ids = fields.Many2many('cms_restaurante.alimento', string='Alimentos', relation='cms_restaurante_alimento_plato_rel') #alimentos del plato no calculado
+
+    # cantidad de alimento para cada plato
+    plato_alimento_ids = fields.One2many('cms_restaurante.plato_alimento', 'plato_id', string='Alimentos')

@@ -26,7 +26,15 @@ class Alimento(models.Model):
     proveedor_id = fields.Many2one('cms_restaurante.proveedor', string='Proveedor')
     
     # nombre platos en los que está --> relación   plato N : M alimento
-    plato_ids = fields.Many2many('cms_restaurante.plato', string='Platos', relation='cms_restaurante_alimento_plato_rel')
+    plato_ids = fields.Many2many('cms_restaurante.plato', string='Platos', relation='cms_restaurante_alimento_plato_rel', compute='_compute_plato_ids', store=False)
+    
+    @api.depends('name')  # name de alimento
+    def _compute_plato_ids(self):
+        for alimento in self:
+            platos = self.env['cms_restaurante.plato'].search([('alimento_ids', 'in', alimento.id)])
+            alimento.plato_ids = platos
+    
+
     
     
-    
+   

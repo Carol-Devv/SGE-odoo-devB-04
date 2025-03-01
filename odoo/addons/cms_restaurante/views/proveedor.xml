@@ -14,7 +14,7 @@
                     <field name="quantity"></field>
                   </tree>
                 </field>
-                <field name="dateStartAgreemetent"></field>
+                <field name="date"></field>
               </group>
             </sheet>
           </form>
@@ -33,7 +33,7 @@
               <field name="quantity"></field>
             </tree>
           </field>
-          <field name="dateStartAgreemetent"></field>
+          <field name="date"></field>
         </tree>
       </field>
     </record>

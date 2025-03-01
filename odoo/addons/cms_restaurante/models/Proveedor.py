@@ -13,6 +13,6 @@ class Proveedor(models.Model):
     
     #campo único porque se repetirá el nombre del proveedor para añadir cantidad de producto
     # fecha de venta alimentos
-    dateStartAgreemetent = fields.Date('Fecha de inicio de contrato', required=True, help="Introduzca la fecha de inicio del contrato.") 
+    date = fields.Date('Fecha de inicio de contrato', required=True, help="Introduzca la fecha de inicio del contrato.") 
     
 

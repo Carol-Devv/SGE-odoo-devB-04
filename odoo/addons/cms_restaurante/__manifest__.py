@@ -33,6 +33,9 @@ Long description of module's purpose
     'demo': [
         'demo/demo.xml',
     ],
+
+    # Quitar filtro
+    'application' : "True",
     
     # Icono módulo
     'icon' : '/cms_restaurante/static/description/restaurante.png',
